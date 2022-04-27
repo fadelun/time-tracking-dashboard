@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+
+    background-color: hsl(226, 43%, 10%);
+  }
+}
+
+@layer utilities {
+  .card {
+    @apply mt-4 lg:mt-0 rounded-xl text-white h-[160px] lg:h-[243px] relative;
+  }
+
+  /* .nest {
+    @apply bg-dark-blue-2 h-4/5 absolute inset-x-0 bottom-0 flex flex-col justify-center px-4 lg:px-6 rounded-xl;
+  } */
+
+  .title {
+    @apply flex justify-between w-full;
+  }
+  /* .current {
+    @apply p-5 flex flex-col items-start justify-center w-full bg-slate-500;
+  } */
+
+  .info {
+    @apply flex lg:flex-col lg:pt-8 justify-between w-full;
+  }
+
+  /* .previous {
+    @apply flex-col flex items-end justify-center p-5  w-full text-right bg-slate-500;
+  } */
+
+  .currently {
+    @apply text-3xl lg:text-5xl font-light;
+  }
+
+  .last_time {
+    @apply text-xs mt-2 lg:mt-3 text-pale-blue;
+  }
+}
+
+/* @layer components{
+    .profile
+} */
