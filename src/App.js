@@ -18,13 +18,14 @@ function App() {
   };
 
   return (
-    <>
-      <main className="w-[326px] my-36 lg:w-3/4  mx-auto   lg:grid  lg:grid-cols-4 lg:grid-cols-[repeat(4,_minmax(260px,_1fr))]d  lg:grid-rows-2  gap-6">
+    <div className="lg:h-screen grid items-center mx-auto my-10 lg:my-0">
+      {/* <main className="w-[326px] my-36 lg:w-3/4  mx-auto   lg:grid  lg:grid-cols-4 lg:grid-cols-[repeat(4,_minmax(260px,_1fr))]d  lg:grid-rows-2  gap-6"> */}
+      <main className="w-[326px] lg:w-[1080px]  mx-auto    lg:grid  lg:grid-cols-4 lg:grid-cols-[repeat(4,_minmax(260px,_1fr))]d  lg:grid-rows-2  gap-6">
         <Profile handleClick={handleClick} time={time} />
         <Dashboard time={time} Posts={Posts} />
-        <Footer />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }
 
