@@ -9,7 +9,7 @@ function Footer() {
           Frontend Mentor
         </a>
         Coded by
-        <a href="#" class="text-white">
+        <a href="#" className="text-white">
           Muhammad Fadll
         </a>
       </p>
